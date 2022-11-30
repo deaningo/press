@@ -1,0 +1,143 @@
+@import 'var';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 20px;
+}
+
+body {
+  color: @font-color;
+  font-size: 14px;
+  line-height: 2;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body,
+pre,
+figure,
+code,
+tr,
+td,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin: 1rem 0 0.5rem;
+  color: @font-color;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 0.9rem;
+}
+h4 {
+  font-size: 0.8rem;
+}
+h5,
+h6 {
+  font-size: 0.7rem;
+}
+
+hr {
+  margin: 1rem 0;
+  height: 0.1rem;
+  border: none;
+  background-color: #ddd;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #fff,
+    #fff 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+pre,
+code {
+  line-height: 1.5;
+}
+
+a {
+  color: @a-color;
+  text-decoration: none;
+
+  &:hover {
+    color: @a-color-50;
+  }
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 0.6rem;
+  border-left: 0.2rem solid #dfe2e5;
+  color: @font-color;
+}
+
+.container {
+  height: 100%;
+
+  code {
+    padding: 0.1rem 0.2rem;
+    background: rgba(27, 31, 35, 0.05);
+    word-wrap: break-word;
+    font-size: 14px;
+  }
+
+  .main {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    min-height: calc(~'100vh - 4.4rem');
+  }
+}
+.highlight,
+.hljs {
+  border-radius: 4px;
+}
+
+@import '_partial/header';
+@import '_partial/post';
+@import '_partial/post-list';
+@import '_partial/archive';
+@import '_partial/category';
+@import '_partial/tag';
+@import '_partial/paginator';
+/* @import "plugins/github-gist"; */
+@import 'plugins/atom-one-dark';
+@import '_partial/footer';
+@import './mobile';

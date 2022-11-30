@@ -1,0 +1,23 @@
+.category-all {
+  .category-list {
+    &-item {
+      list-style: circle;
+      margin-bottom: 0.25rem;
+      a {
+        border-bottom: 1px solid @a-color-50;
+        display: inline-block;
+        line-height: 1.5;
+      }
+    }
+    &-count {
+      margin-left: 0.25rem;
+      color: @a-color-50;
+      &::before {
+        content: '(';
+      }
+      &::after {
+        content: ')';
+      }
+    }
+  }
+}
