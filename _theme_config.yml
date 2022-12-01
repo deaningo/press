@@ -1,0 +1,25 @@
+menu:
+  Home: /
+  Archives: /archives
+  Categories: /categories
+
+
+excerpt:
+  enable: true
+  length: 150
+
+toc:
+  enable: true
+  class: toc
+  list_number: false
+  min_depth: 1
+  max_depth: 4
+
+# 评论 
+gitalk:
+  clientID: ***** # （需要替换）GitHub Application Client ID.
+  clientSecret: be5b64dd41b04229*****c2430e9a194091ae9eba9884 #（需要替换）GitHub Application Client Secret.
+  repo: ***** #（需要替换）GitHub repository.hexo
+  owner: ***** #（需要替换）GitHub repository 所有者，可以是个人或者组织。
+  admin: ['*****'] #（需要替换）GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+

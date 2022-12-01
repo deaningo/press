@@ -23,4 +23,4 @@ npm install hexo-renderer-less --save
 
 配置主题项：
 
-- 具体参考 `theme/press/_config.yml`
+- 使用时需将 _theme_config.yml 重命名为_config.yml，_config.yml为主题配置文件，具体配置参考 `_theme_config.yml`
