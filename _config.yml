@@ -14,3 +14,12 @@ toc:
   list_number: false
   min_depth: 1
   max_depth: 4
+
+# 评论 
+gitalk:
+  clientID: d599f4dcb5b85d531651 # （需要替换）GitHub Application Client ID.
+  clientSecret: be5b64dd41b04229c2430e9a194091ae9eba9884 #（需要替换）GitHub Application Client Secret.
+  repo: gitcomment #（需要替换）GitHub repository.hexo
+  owner: deaningo #（需要替换）GitHub repository 所有者，可以是个人或者组织。
+  admin: ['deaningo'] #（需要替换）GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+
