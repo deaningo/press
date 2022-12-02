@@ -3,6 +3,26 @@
     <h1 class="post-info-title"><%= page.title %></h1>
     <%- partial('_partial/post-meta',{ post:page }) %>
     <div class="post-info-content"><%- page.content %></div>
+    <div id="<%- page.comments ? 'gitalk-container' : ''%>"></div>
+    <div class="post-paging">
+      <% if(page.prev) {%>
+      <a href="<%- url_for(page.prev.path) %>">
+          <div class="post-paging-last">
+              <span>上一篇</span>
+              <p><%= page.prev.title %></p>
+          </div>
+      </a>
+      <% } %>
+
+      <% if(page.next) {%>
+      <a href="<%- url_for(page.next.path) %>">
+          <div class="post-paging-next">
+              <span>下一篇</span>
+              <p><%= page.next.title %></p>
+          </div>
+      </a>
+      <% } %>
+    </div>
   </div>
   <% if(theme.toc.enable){ var tcContent = toc(page.content,{ class:
   theme.toc.class, list_number: theme.toc.list_number ,min_depth:
@@ -27,23 +47,3 @@
     }
   })
 </script>
-<div id="<%- page.comments ? 'gitalk-container' : ''%>"></div>
-<div class="post-paging">
-  <% if(page.prev) {%>
-  <a href="<%- url_for(page.prev.path) %>">
-      <div class="post-paging-last">
-          <span>上一篇</span>
-          <p><%= page.prev.title %></p>
-      </div>
-  </a>
-  <% } %>
-
-  <% if(page.next) {%>
-  <a href="<%- url_for(page.next.path) %>">
-      <div class="post-paging-next">
-          <span>下一篇</span>
-          <p><%= page.next.title %></p>
-      </div>
-  </a>
-  <% } %>
-</div>
