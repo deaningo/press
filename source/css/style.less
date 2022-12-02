@@ -212,6 +212,58 @@ blockquote {
   text-align: center;
   width: 100%;
 }
+article pre {
+  font-size: 0.85em;
+  line-height: 1.5em;
+  display: flex;
+  max-width: 37rem;
+  position: relative;
+  border-radius: 8px;
+  color: #abb2bf;
+    
+}
+:not(pre)>code[class*=language-], pre[class*=language-]{
+  background: #292d3e;
+}
+article code{
+  border-radius: 8px;
+}
+article pre code {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+  background: #292d3e;
+  flex: 1;
+  text-align: left;
+  width: fit-content;
+  padding: 40px 20px 20px 20px;
+  margin: 20px 0;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+}
+article pre:after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fc625d;
+  -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  content: ' ';
+}
+.container code {
+  padding: 0.1rem 0.2rem;
+  background: rgba(27, 31, 35, 0.05);
+  word-wrap: break-word;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
 @import '_partial/header';
 @import '_partial/post';
 @import '_partial/post-list';
@@ -219,7 +271,7 @@ blockquote {
 @import '_partial/category';
 @import '_partial/tag';
 @import '_partial/paginator';
-/* @import "plugins/github-gist"; */
-@import 'plugins/atom-one-dark';
+// @import "plugins/github-gist";
+// @import 'plugins/atom-one-dark';
 @import '_partial/footer';
 @import './mobile';
