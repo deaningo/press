@@ -1,4 +1,5 @@
 # hexo-theme-press
+主题模板演示：http://deaningo.github.io/
 
 ## 安装
 
