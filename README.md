@@ -2,7 +2,7 @@
 
 ## 安装
 
-模板使用`ejs + less`，安装依赖
+由于主题使用`ejs + less`，安装依赖
 
 ```
 npm install hexo-renderer-ejs --save
@@ -15,11 +15,6 @@ npm install hexo-renderer-less --save
 
 - 切换主题 `theme: press`
 - 设置中文 `language: zh-CN`
-- 代码高亮
-  ```yml
-  highlight:
-    hljs: true #新增项
-  ```
 
 配置主题项：
 
